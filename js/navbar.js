@@ -2,7 +2,7 @@ $(document).ready(function(){
     $(document).on('click','#nav-search',function(){
         $("#top-search").addClass("show-top-search");
     });
-    $(document).on('click','#top-cnc-icon',function(){
+    $(document).on('click touchstart','#top-cnc-icon',function(){
         console.log(1);
         $("#top-search").removeClass("show-top-search");
     });
