@@ -2,8 +2,7 @@ $(document).ready(function(){
     $(document).on('click','#nav-search',function(){
         $("#top-search").addClass("show-top-search");
     });
-    $(document).on('click touchstart','#top-cnc-icon',function(){
-        console.log(1);
+    $(document).on('click','#top-cnc-icon',function(){
         $("#top-search").removeClass("show-top-search");
     });
 
@@ -16,3 +15,8 @@ $(document).ready(function(){
     });
 });
 
+var crossSearch=document.getElementById("top-cnc-icon");
+
+crossSearch.addEventListener('click',function(){
+    document.getElementById("top-search").classList.remove("show-top-search");
+});
